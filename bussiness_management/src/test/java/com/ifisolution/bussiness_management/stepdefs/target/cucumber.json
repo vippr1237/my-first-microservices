@@ -1,0 +1,342 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-14T02:35:08.309Z",
+        "line": 3,
+        "name": "client make call to GET /",
+        "description": "",
+        "id": "api-testing;client-make-call-to-get-/",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 165029300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the client call /",
+            "match": {
+              "location": "com.ifisolution.bussiness_management.stepdefs.apiStepdefs.clientCall()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 61039700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the client recieves status code of 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 35
+                }
+              ],
+              "location": "com.ifisolution.bussiness_management.stepdefs.apiStepdefs.clientReceives(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1997200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the response should be \"Demo Api for Devops Fresher\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Demo Api for Devops Fresher",
+                  "offset": 24
+                }
+              ],
+              "location": "com.ifisolution.bussiness_management.stepdefs.apiStepdefs.clientReceivesReponse(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "api testing",
+    "description": "",
+    "id": "api-testing",
+    "keyword": "Feature",
+    "uri": "classpath:features/apitest.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-14T02:35:08.618Z",
+        "line": 3,
+        "name": "Create Product",
+        "description": "",
+        "id": "product-api;create-product",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5998800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User set POST product service api endpoint",
+            "match": {
+              "location": "com.ifisolution.bussiness_management.stepdefs.ProductStepdefs.userSetPOSTProductServiceApiEndpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User Set request HEADER",
+            "match": {
+              "location": "com.ifisolution.bussiness_management.stepdefs.ProductStepdefs.userSetRequestHEADER()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 186155200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User send a POST HTTP request",
+            "match": {
+              "location": "com.ifisolution.bussiness_management.stepdefs.ProductStepdefs.userSendAPOSTHTTPRequest()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User recieves status code of 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 29
+                }
+              ],
+              "location": "com.ifisolution.bussiness_management.stepdefs.ProductStepdefs.userRecievesStatusCodeOf(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User recieves valid POST response",
+            "match": {
+              "location": "com.ifisolution.bussiness_management.stepdefs.ProductStepdefs.userRecievesValidPOSTResponse()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-14T02:35:08.843Z",
+        "line": 10,
+        "name": "Get Products",
+        "description": "",
+        "id": "product-api;get-products",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 133993600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User send a GET HTTP request",
+            "match": {
+              "location": "com.ifisolution.bussiness_management.stepdefs.ProductStepdefs.userSendAGETHTTPRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1001400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User recieves status code of 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 29
+                }
+              ],
+              "location": "com.ifisolution.bussiness_management.stepdefs.ProductStepdefs.userRecievesStatusCodeOf(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User recieves valid response",
+            "match": {
+              "location": "com.ifisolution.bussiness_management.stepdefs.ProductStepdefs.userRecievesValidResponse()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-14T02:35:08.990Z",
+        "line": 15,
+        "name": "Update User",
+        "description": "",
+        "id": "product-api;update-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3003500,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User Set request HEADER",
+            "match": {
+              "location": "com.ifisolution.bussiness_management.stepdefs.ProductStepdefs.userSetRequestHEADER()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 33994100,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User send a PUT HTTP request",
+            "match": {
+              "location": "com.ifisolution.bussiness_management.stepdefs.ProductStepdefs.userSendAPUTHTTPRequest()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User recieves status code of 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 29
+                }
+              ],
+              "location": "com.ifisolution.bussiness_management.stepdefs.ProductStepdefs.userRecievesStatusCodeOf(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User recieves valid PUT response",
+            "match": {
+              "location": "com.ifisolution.bussiness_management.stepdefs.ProductStepdefs.userRecievesValidPUTResponse()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-14T02:35:09.038Z",
+        "line": 21,
+        "name": "Delete User",
+        "description": "",
+        "id": "product-api;delete-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3001300,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User set DELETE product service api endpoint",
+            "match": {
+              "location": "com.ifisolution.bussiness_management.stepdefs.ProductStepdefs.userSetDELETEProductServiceApiEndpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 36996500,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User send a DELETE HTTP request",
+            "match": {
+              "location": "com.ifisolution.bussiness_management.stepdefs.ProductStepdefs.userSendADELETEHTTPRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User recieves status code of 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 29
+                }
+              ],
+              "location": "com.ifisolution.bussiness_management.stepdefs.ProductStepdefs.userRecievesStatusCodeOf(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1002400,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User will recieves a message \"Xóa thành công\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Xóa thành công\"",
+                  "offset": 29
+                }
+              ],
+              "location": "com.ifisolution.bussiness_management.stepdefs.ProductStepdefs.userWillRecievesAMessage(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Product Api",
+    "description": "",
+    "id": "product-api",
+    "keyword": "Feature",
+    "uri": "classpath:features/product.feature",
+    "tags": []
+  }
+]
